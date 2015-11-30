@@ -1,13 +1,13 @@
-snippet setup "Description" b
-	from setuptools import setup
+snippet setup "setup init format" b
+from setuptools import setup
 
-	setup(name='package_name',
-		  version='0.1',
-		  description='The description for package.',
-		  url='https://github.com/sunzhongwei/ytlog',
-		  author='Zhongwei Sun',
-		  author_email='zhongwei.sun2008@gmail.com',
-		  license='MIT',
-		  packages=['package_name'],
-		  zip_safe=False)
+setup(name='${1:package_name}',
+	  version='0.1',
+	  description='${2:description}',
+	  url='https://github.com/sunzhongwei/${3:project}',
+	  author='Zhongwei Sun',
+	  author_email='zhongwei.sun2008@gmail.com',
+	  license='WTFPL',
+	  packages=['$1'],
+	  zip_safe=False)
 endsnippet
